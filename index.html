@@ -27,9 +27,7 @@
           <div class="note" v-for="(note, index) in notes" :key="index">
             <p>
               <span @click="remove(index)">&#10005;</span>
-              <span @input="event => getEdit(event, index)"
-              >{{ note }}</span
-              >
+              <span @input="event => getEdit(event, index)">{{ note }}</span>
             </p>
           </div>
         </div>
